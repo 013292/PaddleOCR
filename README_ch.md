@@ -35,34 +35,17 @@ PaddleOCR同时支持动态图与静态图两种编程范式
 
 ## 效果展示
 
-<div align="center">
-    <img src="doc/imgs_results/ch_ppocr_mobile_v2.0/test_add_91.jpg" width="800">
-    <img src="doc/imgs_results/ch_ppocr_mobile_v2.0/00018069.jpg" width="800">
-</div>
+![](doc/imgs_results/ch_ppocr_mobile_v2.0/test_add_91.jpg)
+![](doc/imgs_results/ch_ppocr_mobile_v2.0/00018069.jpg)
 
 上图是通用ppocr_server模型效果展示，更多效果图请见[效果展示页面](./doc/doc_ch/visualization.md)。
 
-<a name="欢迎加入PaddleOCR技术交流群"></a>
-## 欢迎加入PaddleOCR技术交流群
-- 微信扫描二维码加入官方交流群，获得更高效的问题答疑，与各行各业开发者充分交流，期待您的加入。
-
-<div align="center">
-<img src="./doc/joinus.PNG"  width = "200" height = "200" />
-</div>
 
 ## 快速体验
 - PC端：超轻量级中文OCR在线体验地址：https://www.paddlepaddle.org.cn/hub/scene/ocr
 
 - 移动端：[安装包DEMO下载地址](https://ai.baidu.com/easyedge/app/openSource?from=paddlelite)(基于EasyEdge和Paddle-Lite, 支持iOS和Android系统)，Android手机也可以直接扫描下面二维码安装体验。
 
-
-<div align="center">
-<img src="./doc/ocr-android-easyedge.png"  width = "200" height = "200" />
-</div>
-
-- 代码体验：从[快速安装](./doc/doc_ch/quickstart.md) 开始
-
-<a name="模型下载"></a>
 ## PP-OCR 2.0系列模型列表（更新中）
 **说明** ：2.0版模型和[1.1版模型](https://github.com/PaddlePaddle/PaddleOCR/blob/develop/doc/doc_ch/models_list.md)的主要区别在于动态图训练vs.静态图训练，模型性能上无明显差距。
 | 模型简介     | 模型名称     |推荐场景          | 检测模型 | 方向分类器 | 识别模型 |
@@ -114,39 +97,28 @@ PaddleOCR同时支持动态图与静态图两种编程范式
 
 <a name="PP-OCR"></a>
 ## PP-OCR Pipline
-<div align="center">
-    <img src="./doc/ppocr_framework.png" width="800">
-</div>
+![](./doc/ppocr_framework.png)
 
 PP-OCR是一个实用的超轻量OCR系统。主要由DB文本检测[2]、检测框矫正和CRNN文本识别三部分组成[7]。该系统从骨干网络选择和调整、预测头部的设计、数据增强、学习率变换策略、正则化参数选择、预训练模型使用以及模型自动裁剪量化8个方面，采用19个有效策略，对各个模块的模型进行效果调优和瘦身，最终得到整体大小为3.5M的超轻量中英文OCR和2.8M的英文数字OCR。更多细节请参考PP-OCR技术方案 https://arxiv.org/abs/2009.09941 。其中FPGM裁剪器[8]和PACT量化[9]的实现可以参考[PaddleSlim](https://github.com/PaddlePaddle/PaddleSlim)。
 
-<a name="效果展示"></a>
 ## 效果展示 [more](./doc/doc_ch/visualization.md)
 - 中文模型
-<div align="center">
-    <img src="./doc/imgs_results/ch_ppocr_mobile_v2.0/test_add_91.jpg" width="800">
-    <img src="./doc/imgs_results/ch_ppocr_mobile_v2.0/00015504.jpg" width="800">
-    <img src="./doc/imgs_results/ch_ppocr_mobile_v2.0/00056221.jpg" width="800">
-    <img src="./doc/imgs_results/ch_ppocr_mobile_v2.0/rotate_00052204.jpg" width="800">
-</div>
+![](./doc/imgs_results/ch_ppocr_mobile_v2.0/test_add_91.jpg)
+![](./doc/imgs_results/ch_ppocr_mobile_v2.0/00015504.jpg)
+![](./doc/imgs_results/ch_ppocr_mobile_v2.0/00056221.jpg)
+![](./doc/imgs_results/ch_ppocr_mobile_v2.0/rotate_00052204.jpg)
 
 - 英文模型
-<div align="center">
-    <img src="./doc/imgs_results/ch_ppocr_mobile_v2.0/img_12.jpg" width="800">
-</div>
+![](./doc/imgs_results/ch_ppocr_mobile_v2.0/img_12.jpg)
 
 - 其他语言模型
-<div align="center">
-    <img src="./doc/imgs_results/french_0.jpg" width="800">
-    <img src="./doc/imgs_results/korean.jpg" width="800">
-</div>
+![](./doc/imgs_results/french_0.jpg)
+![](./doc/imgs_results/korean.jpg)
 
 
-<a name="许可证书"></a>
 ## 许可证书
 本项目的发布受<a href="https://github.com/PaddlePaddle/PaddleOCR/blob/master/LICENSE">Apache 2.0 license</a>许可认证。
 
-<a name="贡献代码"></a>
 ## 贡献代码
 我们非常欢迎你为PaddleOCR贡献代码，也十分感谢你的反馈。
 
