@@ -4,15 +4,15 @@
 
 PPOCRLabel是一款适用于OCR领域的半自动化图形标注工具，内置PPOCR模型对数据自动标注和重新识别。使用python3和pyqt5编写，支持矩形框标注和四点标注模式，导出格式可直接用于PPOCR检测和识别模型的训练。
 
-<img src="./data/gif/steps.gif" width="100%"/>
+![](./data/gif/steps.gif)
 
 #### 近期更新
 
-- 2021.1.11：优化标注体验（by [edencfc](https://github.com/edencfc)）：
+- 2021.1.11：优化标注体验（by [edencfc](https://github.com/edencfc) ）：
   - 用户可在“视图 - 弹出标记输入框”选择在画完检测框后标记输入框是否弹出。
   - 识别结果与检测框同步滚动。
   - 识别结果更改为单击修改。（如果无法修改，请切换为系统自带输入法，或再次切回原输入法）
-- 2020.12.18： 支持对单个标记框进行重新识别（by [ninetailskim](https://github.com/ninetailskim)），完善快捷键。
+- 2020.12.18： 支持对单个标记框进行重新识别（by [ninetailskim](https://github.com/ninetailskim) ），完善快捷键。
 
 #### 尽请期待
 
@@ -25,7 +25,9 @@ PPOCRLabel是一款适用于OCR领域的半自动化图形标注工具，内置P
 ## 安装
 
 ### 1. 安装PaddleOCR
-PPOCRLabel内置PaddleOCR模型，故请参考[PaddleOCR安装文档](https://github.com/PaddlePaddle/PaddleOCR/blob/develop/doc/doc_ch/installation.md)准备好PaddleOCR，并确保PaddleOCR安装成功。
+PPOCRLabel内置PaddleOCR模型，故请参考
+[PaddleOCR安装文档](https://github.com/PaddlePaddle/PaddleOCR/blob/develop/doc/doc_ch/installation.md) 
+准备好PaddleOCR，并确保PaddleOCR安装成功。
 
 ### 2. 安装PPOCRLabel
 #### Windows + Anaconda
@@ -114,7 +116,9 @@ python3 PPOCRLabel.py --lang ch
 
  - 模型语言切换：用户可通过菜单栏中 "PaddleOCR" - "选择模型" 切换内置模型语言，目前支持的语言包括法文、德文、韩文、日文。具体模型下载链接可参考[PaddleOCR模型列表](https://github.com/PaddlePaddle/PaddleOCR/blob/develop/doc/doc_ch/models_list.md).
 
- - 自定义模型：用户可根据[自定义模型代码使用](https://github.com/PaddlePaddle/PaddleOCR/blob/develop/doc/doc_ch/whl.md#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E5%9E%8B)，通过修改PPOCRLabel.py中针对[PaddleOCR类的实例化](https://github.com/PaddlePaddle/PaddleOCR/blob/develop/PPOCRLabel/PPOCRLabel.py#L110)替换成自己训练的模型。
+ - 自定义模型：用户可根据
+   [自定义模型代码使用](https://github.com/PaddlePaddle/PaddleOCR/blob/develop/doc/doc_ch/whl.md#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E5%9E%8B)
+   ，通过修改PPOCRLabel.py中针对[PaddleOCR类的实例化](https://github.com/PaddlePaddle/PaddleOCR/blob/develop/PPOCRLabel/PPOCRLabel.py#L110) 替换成自己训练的模型。
 
 ### 保存方式
 

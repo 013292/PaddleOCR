@@ -3,7 +3,9 @@
 本节以icdar2015数据集为例，介绍PaddleOCR中检测模型的训练、评估与测试。
 
 ## 数据准备
-icdar2015数据集可以从[官网](https://rrc.cvc.uab.es/?ch=4&com=downloads)下载到，首次下载需注册。
+icdar2015数据集可以从
+[官网](https://rrc.cvc.uab.es/?ch=4&com=downloads)
+下载到，首次下载需注册。
 
 将下载到的数据集解压到工作目录下，假设解压在 PaddleOCR/train_data/ 下。另外，PaddleOCR将零散的标注文件整理成单独的标注文件
 ，您可以通过wget的方式进行下载。
@@ -45,7 +47,9 @@ json.dumps编码前的图像标注信息是包含多个字典的list，字典中
 ## 快速启动训练
 
 首先下载模型backbone的pretrain model，PaddleOCR的检测模型目前支持两种backbone，分别是MobileNetV3、ResNet_vd系列，
-您可以根据需求使用[PaddleClas](https://github.com/PaddlePaddle/PaddleClas/tree/master/ppcls/modeling/architectures)中的模型更换backbone。
+您可以根据需求使用
+[PaddleClas](https://github.com/PaddlePaddle/PaddleClas/tree/master/ppcls/modeling/architectures)
+中的模型更换backbone。
 ```shell
 cd PaddleOCR/
 # 下载MobileNetV3的预训练模型
